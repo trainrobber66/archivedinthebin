@@ -3,10 +3,13 @@
 <body>
 <title>start a new thread</title>
 <center>
-<form action="index.html" method="GET"> 
+<form action="/" method="GET"> 
 <textarea name="com" cols="48" rows="4" wrap="soft" tabindex="4"></textarea><br><br>
 <input type="file" name="file"><br><br>
-<input type="submit" value="Post" tabindex="6"><br> 
+<input type="submit" value="Post" tabindex="6"><br>
+<?php
+  echo $_GET["query"];
+?>
 </center>
 </body>
 </html>
