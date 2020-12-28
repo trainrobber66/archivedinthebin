@@ -13,10 +13,14 @@ body {
 <form action="index2.html" method="GET"> 
 <textarea name="com" cols="48" rows="4" wrap="soft" tabindex="4"></textarea><br><br>
 <input type="file"><br><br>
-<input type="submit" value="Post" tabindex="6"><br>
-</div> 
+<input type="submit" value="Post" tabindex="6"><br> 
 </center>
-
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // do logic
+  $name = $_POST['fname'];
+}
+?>
 </body>
 </html>
 
